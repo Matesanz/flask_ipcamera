@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="column is-4 is-offset-4">
+    <span style='font-size:100px;'>&#128048;</span>
+    <h3 class="title">Así puedo saber que eres mi humano de siempre.</h3>
+    <div class="box">
+        <form method="POST" action="/signup">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="name" placeholder="Mascota" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="password" name="password" placeholder="Huella">
+                </div>
+            </div>
+
+            <button class="button is-block is-info is-large is-fullwidth">Registrarse</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
